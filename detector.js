@@ -44,15 +44,15 @@ class Detector {
                 console.log(`Обнаружен вагон №${wagon.getId()}`);
                 if (this.#train.getDirection() === "l") {
                     if (this.#wheel > 2) {
-                        console.log("Передняя часть вагона " + this.#wheel);
+                        console.log("Передняя часть вагона ");
                     } else {
-                        console.log("Задняя часть вагона " + this.#wheel)
+                        console.log("Задняя часть вагона ")
                     }
                 } else {
                     if (this.#wheel <= 2) {
-                        console.log("Передняя часть вагона " + this.#wheel);
+                        console.log("Передняя часть вагона ");
                     } else {
-                        console.log("Задняя часть вагона " + this.#wheel)
+                        console.log("Задняя часть вагона ")
                     }
                 }
                 console.log(wagon.getWheelById(this.#wheel) ? "Колесо на месте" : "Колеса нет")
